@@ -300,7 +300,7 @@ class _homeState extends State<home> {
                     _isLoading
                         ? Center(child: CircularProgressIndicator())
                         : _responseBytes != null
-                        ? Image.memory(_responseBytes!, fit: BoxFit.none)
+                        ? Image.memory(_responseBytes!, fit: BoxFit.contain)
                         : _selectedImage != null
                         ? Image.file(_selectedImage!, fit: BoxFit.contain)
                         : SizedBox(),
